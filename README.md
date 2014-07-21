@@ -33,8 +33,8 @@ bower update
 ## Quickstart for Jekyll
 
   * In the command line:
-	~ $ gem install jekyll
-	~ $ cd dean_ga-submit
-	~ $ jekyll serve
-	# => Now browse to http://localhost:4000
+	* ~ $ gem install jekyll
+	* ~ $ cd dean_ga-submit
+	* ~ $ jekyll serve
+	* # => Now browse to http://localhost:4000
 
