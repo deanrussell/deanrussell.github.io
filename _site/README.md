@@ -32,9 +32,10 @@ bower update
 ```
 ## Quickstart for Jekyll
 
-  * In the command line:
+  ```bash
 	~ $ gem install jekyll
-	~ $ cd dean_ga-submit
+	~ $ cd deanrussell.github.io
 	~ $ jekyll serve
 	# => Now browse to http://localhost:4000
+  ```
 

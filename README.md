@@ -34,7 +34,7 @@ bower update
 
   ```bash
 	~ $ gem install jekyll
-	~ $ cd dean_ga-submit
+	~ $ cd deanrussell.github.io
 	~ $ jekyll serve
 	# => Now browse to http://localhost:4000
   ```
