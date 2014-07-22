@@ -5,7 +5,9 @@
 
 html, body {
     height:100%;
-    width:100%; }
+    width:100%;
+	min-width: 320px;
+	min-height: 480px; }
 
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif!important;
@@ -29,20 +31,15 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5)!important; }
 
 .cover__icon-bottom {
-	background: url('/img/sprites/dr-icon-sprite.png') no-repeat -190px 0;
-	background-size: 339px 150px;
-	width: 150px;
-	height: 150px;
-	margin: 7% auto 0;
 	border: 2px solid #1a6666;
-	border-radius: 100px; }
+	border-radius: 100px;
+	-webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -ms-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	  transition: all 300ms ease-in-out; }
 
 .cover__icon-top {
-	background: url('/img/sprites/dr-icon-sprite.png') no-repeat 0 0;
-	background-size: 339px 150px;
-	margin: -150px auto 0;
-	width: 150px;
-	height: 150px;
 	border: 2px solid #1a6666;
 	border-radius: 100px;
 	-webkit-transition: all 300ms ease-in-out;
@@ -63,31 +60,173 @@ a:hover .cover__icon-top {
 .page hr {
 	margin: 7% auto 7%; }
 
+.button {
+	background-color: rgba(153,255,204,0)!important;
+	border: 2px solid rgba(255, 255, 255, 0.5)!important;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5)!important; }
+
+.button:hover {
+	background-color: #9fc!important;
+	border-color: rgba(153,255,204,0.25)!important;
+	color: #333!important; }
+
+.button.tiny {
+	padding-top: 0.4rem;
+	padding-right: 0.6rem;
+	padding-bottom: 0.4rem;
+	padding-left: 0.6rem; }
+
+.social-button-group {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	width: 223px;
+	overflow: hidden; }
+  .social-button-group > li {
+    list-style: none;
+    float: left;
+    margin-left: 5px;
+    display: block; }
+  .social-button-group li:first-child {
+  	margin-left: 0; }
+    .social-button-group > li > * {
+      display: block; }
+
+.social_button {
+	border-radius: 50%;
+	border: 2px solid;
+	border-color: rgba(255, 255, 255, 0.5)!important;
+	font-size: 2.25rem!important;
+	width: 3.25rem;
+	height: 3.25rem;
+	padding: 0 0!important;
+	background-color: rgba(255, 255, 255, 0.5)!important;
+	color: #333333!important;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5)!important;
+	transition: border-color 400ms ease-out;
+	transition: background 300ms ease-out; }
+
+.social_button:hover {
+	background-color: #333333!important;
+	color: #99FFCC!important;
+	border-color: rgba(255, 255, 255, 0.25)!important; }
+
+/*===================>>>SOCIAL SPRITES<<<=================*/
+.twit {
+	background: url('/img/sprites/social-sprite.png') no-repeat 0 0;
+	background-size: 401px 35px;
+	width: 36px;
+	height: 36px;
+	margin: 7px auto; }
+
+.social_button:hover .twit {
+	background: url('/img/sprites/social-sprite.png') no-repeat -41px 0;
+	background-size: 401px 35px; }
+
+.lnkd {
+	background: url('/img/sprites/social-sprite.png') no-repeat -82px 0;
+	background-size: 401px 35px;
+	width: 34.5px;
+	height: 34.5px;
+	margin: 7px auto; }
+
+.social_button:hover .lnkd {
+	background: url('/img/sprites/social-sprite.png') no-repeat -123px 0;
+	background-size: 401px 35px; }
+
+.gith {
+	background: url('/img/sprites/social-sprite.png') no-repeat -164px 0;
+	background-size: 401px 35px;
+	width: 36.25px;
+	height: 36.25px;
+	margin: 7px auto; }
+
+.social_button:hover .gith {
+	background: url('/img/sprites/social-sprite.png') no-repeat -205px 0;
+	background-size: 401px 35px; }
+
+.mail {
+	background: url('/img/sprites/social-sprite.png') no-repeat -246px 0;
+	background-size: 401px 35px;
+	width: 36px;
+	height: 36px;
+	margin: 7px auto; }
+
+.social_button:hover .mail {
+	background: url('/img/sprites/social-sprite.png') no-repeat -287px 0;
+	background-size: 401px 35px; }
+
+/*======================>>>LEFT OFF CANVAS (ABOUT)<<<===============*/
+
+.cover {
+	z-index: 1;
+
+}
+
+.left-off {
+	background-color: #333;
+	z-index: 0;
+
+}
+
 /*======================>>>MEDIA QUERIES<<<===============*/
 
 /*COVER (LANDING PAGE)*/
 
-@media only screen 
-and (min-width : 320px) {
+@media only screen {
 	.cover__q-profile {
 		font-size: 2rem; }
+	.cover__icon-bottom {
+		background: url('/img/sprites/dr-icon-sprite.png') no-repeat -127.5px 0;
+		background-size: 226px 100px;
+		margin: 10% auto 0;
+		width: 100px;
+		height: 100px; }
+	.cover__icon-top {
+		background: url('/img/sprites/dr-icon-sprite.png') no-repeat 0 0;
+		background-size: 226px 100px;
+		margin: -100px auto 0;
+		width: 100px;
+		height: 100px; }
+	.button.tiny {
+		font-size: 0.8rem; }
 }
 
-@media only screen 
+@media only screen
 and (min-width : 480px) {
 	.cover__q-profile {
 		font-size: 2.5rem; }
+	.button.tiny {
+		font-size: 0.9rem; }
 }
 
-@media only screen 
+@media only screen
 and (min-width : 768px) {
 	.cover__q-profile {
 		font-size: 3rem; }
+	.cover__icon-bottom {
+		background: url('/img/sprites/dr-icon-sprite.png') no-repeat -190px 0;
+		background-size: 339px 150px;
+		margin: 7% auto 0;
+		width: 150px;
+		height: 150px; }
+	.cover__icon-top {
+		background: url('/img/sprites/dr-icon-sprite.png') no-repeat 0 0;
+		background-size: 339px 150px;
+		margin: -150px auto 0;
+		width: 150px;
+		height: 150px; }
+	.button.tiny {
+		font-size: 1rem; }
 }
 
 @media only screen
 and (min-width : 1224px) {
 	.cover__q-profile {
 		font-size: 3.5rem; }
+	.button.tiny {
+		font-size: 1.25rem; }
+	.page h4 {
+		margin-bottom: 1rem; }
 }
 
