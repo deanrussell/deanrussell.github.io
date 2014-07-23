@@ -1,6 +1,6 @@
 # Dean Russell's GA Sumbission
 
-A fun, responsive profile page &amp; blog for a learning web dev.
+A fun, responsive profile page &amp; (soon-to-be) blog for a learning web dev.
 
 This site uses Zurb's Foundation &amp; Jekyll, and is hosted on GitHub Pages. For a peak, navigate to [this example site](http://dean.cool).
 
@@ -39,3 +39,4 @@ bower update
 	# => Now browse to http://localhost:4000
   ```
 
+~Ernest Hemingway liked G&T's and so do I.
