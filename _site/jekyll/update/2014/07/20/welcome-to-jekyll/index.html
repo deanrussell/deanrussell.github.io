@@ -13,15 +13,18 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/last.css">
     <!-- JS (see more in body) -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/modernizr/modernizr.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" defer></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" defer></script>
+    <script type="text/javascript" src="js/toggle.js" defer></script>
 </head>
 
 
   <body>
+    <!-- COVER (Landing Page) -->
     <div class="page">
-      <!-- COVER (Landing Page) -->
       <div class="cover row">
-        <div class="small-10 small-centered columns">
+        <div id="cover-div" class="small-10 small-centered columns">
           <div class="cover__icon-bottom"></div>
           <a href="http://dean.cool" title="reload me, dude">
             <div class="cover__icon-top"></div>
@@ -40,11 +43,11 @@
           </div> <!-- Responsive break line -->
           <h4>startups, strategies &amp; synthesizers</h4>
           <div class="row">
-            <div class="medium-6 small-10 small-centered columns text-center">
+            <div id="button-row" class="medium-6 small-10 small-centered columns text-center">
               <ul class="button-group round even-3">
-                <li><a href="#" class="tiny button">about</a></li>
+                <li><a href="#" class="tiny button button__page-right">about</a></li>
                 <li><a href="https://dl.dropboxusercontent.com/u/41996474/Dean%20Russell%20-%20Resume.pdf" target="_blank" class="tiny button">résumé</a></li>
-                <li><a href="#" class="tiny button">blog</a></li>
+                <li><a href="#" class="tiny button button__page-left">contact</a></li>
               </ul>
             </div>
           </div>
@@ -61,6 +64,20 @@
         </div> <!-- COVER main column .small-10 -->
       </div> <!-- COVER .row -->
     </div> <!-- .page -->
+    <!-- OFF-CANVAS LEFT (ABOUT ME) -->
+    <div class="off-left">
+      <a href="#" class="button__page-right"><div class="off-left__arrow">
+        <div class="off-left__filler"></div>
+        <div class="off-left__sprite"></div>
+      </div></a>
+    </div>
+    <!-- OFF-CANVAS RIGHT (CONTACT) -->
+    <div class="off-right">
+      <a href="#" class="button__page-left"><div class="off-right__arrow">
+        <div class="off-right__filler"></div>
+        <div class="off-right__sprite"></div>
+      </div></a>
+    </div>
     <!-- JS script tags include -->
     <footer class="site-footer">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
