@@ -186,8 +186,7 @@ a:hover .cover__icon-top {
 
 .off-left__arrow {
 	width: 10%;
-	margin-top:-1000px;
-	margin-bottom: -1000px;
+	height: 100%;
 	max-width: 55px;
 	min-width: 40px;
 	top: 0;
@@ -196,7 +195,7 @@ a:hover .cover__icon-top {
 	position: fixed;
 	overflow-y: auto;
 	background: #1a6666;
-	z-index: 1;
+	z-index: 2002;
 	box-sizing: content-box;
 	box-shadow: -1px 0 10px rgba(26, 26, 26, 0.75);
 	-webkit-transition: all 300ms ease-in-out;
@@ -272,6 +271,12 @@ a:hover .cover__icon-top {
 	height: 42px;
 }
 
+.off__arrow-above {
+	position: fixed;
+	height: 100%;
+	top: 0;
+	bottom: 0; }
+
 /*======================>>>OFF CANVAS CONTENT (LEFT)<<<===============*/
 
 .off-left__content {
@@ -338,21 +343,20 @@ a:hover .cover__icon-top {
 	content: " Univeristy "; }
 
 .bio-hide06:before {
-	content: "I started professionally as a sound designer, film editor & composer. At Northeastern, I studied contemporary classical music, writing mostly electroacoustic and acousmatic works. Before that, I practiced the lost art of funk bass and chicka chicka guitar.";
-}
+	content: "I started professionally as a sound designer, film editor & composer. At Northeastern, I studied contemporary classical music, writing mostly electroacoustic and acousmatic works. Before that, I practiced the lost art of funk bass and chicka chicka guitar."; }
 
 .contact {
-	text-align: center;
-}
+	text-align: center; }
 
 .contact hr {
 	margin: 5% auto;
-	width: 20%;
-}
+	width: 20%; }
 
 .list {
-	list-style-type: none;
-}
+	list-style-type: none; }
+
+.no-disp {
+	display: none; }
 
 /*======================>>>MEDIA QUERIES<<<===============*/
 

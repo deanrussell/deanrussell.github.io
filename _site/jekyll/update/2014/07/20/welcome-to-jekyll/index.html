@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/last.css">
     <!-- JS -->
+    <script src="bower_components/modernizr/modernizr.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" defer></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" defer></script>
     <script type="text/javascript" src="js/toggle.js" defer></script>
@@ -64,8 +65,8 @@
       </div> <!-- COVER .row -->
     </div> <!-- .page -->
     <!-- OFF-CANVAS LEFT (ABOUT ME) -->
-    <div class="off-left">
-      <a href="#" class="button__page-right"><div class="off-left__arrow">
+    <div class="off-left no-disp">
+      <a href="#" class="button__page-right off__arrow-above"><div class="off-left__arrow">
         <div class="off-left__filler"></div>
         <div class="off-left__sprite"></div>
       </div></a> <!-- click to page right -->
@@ -86,8 +87,8 @@
       </div> <!-- Plus/minus row -->
     </div>
     <!-- OFF-CANVAS RIGHT (CONTACT) -->
-    <div class="off-right">
-      <a href="#" class="button__page-left"><div class="off-right__arrow">
+    <div class="off-right no-disp">
+      <a href="#" class="button__page-left"><div class="off-right__arrow off__arrow-above">
         <div class="off-right__filler"></div>
         <div class="off-right__sprite"></div>
       </div></a>
@@ -105,6 +106,9 @@
     </div>
     <!-- JS script tags include -->
     <footer class="site-footer">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+ 	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
 </footer>
 
   </body>

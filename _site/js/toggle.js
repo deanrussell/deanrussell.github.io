@@ -21,4 +21,8 @@ $(document).ready(function(){
         $("#b5").toggleClass("bio-hide05");
         $("#b6").toggleClass("bio-hide06");
     });
+    window.onload=function (){
+        $(".off-left").removeClass("no-disp");
+        $(".off-right").removeClass("no-disp");
+    };
 });
