@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dean, Inc. Opens IPO With A Simple Message: 'Hello World'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dean Russell | Always learning web dev, NPR producer and champion of the high-five.">
+    <link rel="canonical" href="http://dean.cool/tomfoolery/2014/07/16/hello-world/">
+    <link rel="icon" type="image/png" href="img/dr-favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/last.css">
+    <!-- JS -->
+    <script src="bower_components/modernizr/modernizr.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" defer></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" defer></script>
+    <script type="text/javascript" src="js/toggle.js" defer></script>
+</head>
+
 
   <body>
     <!-- COVER (Landing Page) -->
@@ -78,19 +95,64 @@
      <div class="row blogroll_wrap">
       <div class="small-12 columns">
         <ul class="posts">
-          {% for post in site.posts %}
-            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="{{ post.url | prepend: site.baseurl }}"-->
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/tomfoolery/2014/07/16/hello-world/"-->
               <ul>
-                <li><h6 class="post-kicker">{{ post.kicker }}</h6></li>
-                <li class="post-name">{{ post.title }}</li>
-                <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></li>
+                <li><h6 class="post-kicker">Just Sayin'</h6></li>
+                <li class="post-name">Dean, Inc. Opens IPO With A Simple Message: 'Hello World'</li>
+                <li><span class="post-date">Jul 16, 2014</span></li>
               </ul>
             </li></a>
-          {% endfor %}
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/jekyll/update/2014/07/14/welcome-to-jekyll/"-->
+              <ul>
+                <li><h6 class="post-kicker">Blog Hack</h6></li>
+                <li class="post-name">Skip The CMS, Jekyll Is The Fastest Flexible Publishing Platform Around</li>
+                <li><span class="post-date">Jul 14, 2014</span></li>
+              </ul>
+            </li></a>
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/apple/2014/07/14/mac-rumors/"-->
+              <ul>
+                <li><h6 class="post-kicker">Fleetwood Mac</h6></li>
+                <li class="post-name">The Rumored iPhone 6 Is Rumored To Be Delayed Because Of Rumored Issues With Its Rumored Sapphire Cover</li>
+                <li><span class="post-date">Jul 14, 2014</span></li>
+              </ul>
+            </li></a>
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/apple/peaches/2014/07/13/peaches-computer/"-->
+              <ul>
+                <li><h6 class="post-kicker">Ripe For Parody</h6></li>
+                <li class="post-name">A Coup At Peaches Computer Lands Steve Hobby A Job</li>
+                <li><span class="post-date">Jul 13, 2014</span></li>
+              </ul>
+            </li></a>
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/ugh/2014/07/12/guy-fawkes/"-->
+              <ul>
+                <li><h6 class="post-kicker">Rejected Weird Al Songs</h6></li>
+                <li class="post-name">What Does Guy Fawkes Say?</li>
+                <li><span class="post-date">Jul 12, 2014</span></li>
+              </ul>
+            </li></a>
+          
+            <a class="post-link no-shadow" href=""><li class="blogroll_entry"><!--href="/boobs/%22huffington/post%22/2014/07/11/huffington-post-sideboob/"-->
+              <ul>
+                <li><h6 class="post-kicker">Mad Men</h6></li>
+                <li class="post-name">The Secret To HuffPo's Clickbait Strategy? Sideboob</li>
+                <li><span class="post-date">Jul 11, 2014</span></li>
+              </ul>
+            </li></a>
+          
         </ul>
       </div>
     </div>
     <!-- JS script tags include -->
-    {% include footer.html %}
+    <footer class="site-footer">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+ 	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+</footer>
+
   </body>
 </html>

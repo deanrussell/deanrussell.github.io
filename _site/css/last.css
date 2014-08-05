@@ -358,6 +358,56 @@ a:hover .cover__icon-top {
 .no-disp {
 	display: none; }
 
+/*======================>>>OFF CANVAS CONTENT (RIGHT)<<<===============*/
+
+.posts {
+	margin-right: -10px;
+	margin-bottom: 0;
+}
+.posts li {
+	list-style-type: none;
+}
+
+.post-kicker, .post-date {
+	text-transform: uppercase;
+}
+
+.post-kicker {
+	font-size: 0.75rem;
+	color: #99FFCC;
+}
+
+.post-date {
+	font-size: 0.75rem;
+	color: #c2c2c2;
+}
+
+.post-name {
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+}
+
+.blogroll_entry {
+	padding-top: 1rem;
+	padding-right: 0.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1.5px solid #474747;
+	transition: background-color 300ms ease-out;
+}
+
+.blogroll_dummyhead {
+	margin-top: 7px;
+}
+
+a.no-shadow:hover {
+	text-shadow: none!important;
+}
+
+a.no-shadow:hover .blogroll_rss, a.no-shadow:hover .about_icon {
+	color: #A3C2C2!important;
+	border-top: 5px solid #99FFCC;
+}
+
 /*======================>>>MEDIA QUERIES<<<===============*/
 
 /*COVER (LANDING PAGE)*/

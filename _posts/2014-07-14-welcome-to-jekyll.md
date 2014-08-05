@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-07-20 19:57:16
+kicker:	Blog Hack
+title:  "Skip The CMS, Jekyll Is The Fastest Flexible Publishing Platform Around"
+date:   2014-07-14 21:32:58
 categories: jekyll update
 ---
 
